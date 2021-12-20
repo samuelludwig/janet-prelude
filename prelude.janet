@@ -4,3 +4,5 @@
   (filter 
     |(peg/match ~{:main (thru ,s)} $) 
     (all-bindings)))
+
+(defn const [_ c] c)
